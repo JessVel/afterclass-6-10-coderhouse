@@ -1,4 +1,5 @@
 import './styles/footer.scss';
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -7,6 +8,13 @@ const Footer = () => {
         Made with ❤️ for after class-6/10 by -
         <a href='https://www.linkedin.com/in/%E2%9A%A1-jesica-velazquez-840a44120/'>
           Jesica Velazquez
+        </a>
+        - Peep source code
+        <a
+          classname='link-icon'
+          href='https://github.com/JessVel/afterclass-6-10-coderhouse'
+        >
+          <FaGithub />
         </a>
       </p>
     </footer>
