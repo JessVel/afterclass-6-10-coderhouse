@@ -5,7 +5,10 @@ import Spinner from '../Spinner/Spinner';
 import './ListContainer/listContainer.scss';
 
 const ListContainer = ({ theme, handleFav, favArray, setFavArray }) => {
+  //Estado de datos
   const [data, setData] = useState([]);
+
+  //Estado loading
   const [loading, setLoading] = useState(true);
 
   // Request api real
@@ -18,7 +21,6 @@ const ListContainer = ({ theme, handleFav, favArray, setFavArray }) => {
   // }, []);
 
   //request api ficticia
-
   useEffect(() => {
     apiCall()
       .then((response) => {

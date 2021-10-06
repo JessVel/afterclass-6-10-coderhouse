@@ -5,9 +5,13 @@ import Footer from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
+  // Estado de theme switch
   const [theme, setTheme] = useState(true);
+
+  //Estado de array de favoritos
   const [favArray, setFavArray] = useState([]);
 
+  //Funcion cambiar de theme
   const handleTheme = (e) => {
     e.preventDefault();
     setTheme(!theme);

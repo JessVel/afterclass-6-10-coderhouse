@@ -14,14 +14,17 @@ const Card = ({
   data,
   id,
 }) => {
+  //Estado de favorito
   const [fav, setFav] = useState(false);
 
+  // Funcion para agregar a favoritos
   const handleAdd = (id) => {
     const favs = data && data.filter((item) => item.id === id);
     setFavArray([...favArray, favs[0]]);
     setFav(!fav);
   };
 
+  //funcion para eliminar de favoritos
   const handleRemove = (id) => {
     const favs = favArray && favArray.filter((item) => item.id !== id);
     setFavArray(favs);
