@@ -39,7 +39,7 @@ const Card = ({
           <FaHeart />
         </button>
       )}
-      <img className='card-img' src={image} />
+      <img className='card-img' src={image} alt={name} />
       <h1 className='card-title'>{name}</h1>
       <p className='card-description'>Status:{status}</p>
       <p className='card-description'>Especie:{species}</p>
