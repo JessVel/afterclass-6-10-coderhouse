@@ -7,4 +7,7 @@
   padding: 90px 30px;
   height: 100%;
   align-items: center;
+  min-height: 800px;
+  scroll-behavior: smooth;
+  scroll-snap-align: initial;
 }

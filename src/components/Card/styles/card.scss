@@ -11,6 +11,9 @@
   border-radius: 5px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 
+  .card-img {
+    border-radius: 5px;
+  }
   .card-fav {
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
@@ -52,11 +55,16 @@
     justify-content: center;
     flex-direction: column;
     background-color: #3d2c8d;
-    width: 224px;
+    max-width: 300px;
+    max-height: 450px;
     text-align: center;
     position: relative;
-    padding: 50px;
+    padding: 50px 20px;
     border-radius: 5px;
+
+    .card-img {
+      border-radius: 5px;
+    }
 
     .card-fav {
       outline: none;
