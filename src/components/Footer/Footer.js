@@ -11,7 +11,7 @@ const Footer = () => {
         </a>
         - Peep source code
         <a
-          classname='link-icon'
+          className='link-icon'
           href='https://github.com/JessVel/afterclass-6-10-coderhouse'
           aria-label='Ir a Github'
         >
