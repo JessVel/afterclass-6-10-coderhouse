@@ -34,11 +34,19 @@ const Card = ({
   return (
     <div className={theme ? 'card' : 'card--dark'}>
       {!fav ? (
-        <button className={'card-fav'} onClick={() => handleAdd(id)}>
+        <button
+          className={'card-fav'}
+          aria-label='Agregar a favoritos'
+          onClick={() => handleAdd(id)}
+        >
           <FaHeart />
         </button>
       ) : (
-        <button className={'card-fav--active'} onClick={() => handleRemove(id)}>
+        <button
+          className={'card-fav--active'}
+          aria-label='Eliminar de favoritos'
+          onClick={() => handleRemove(id)}
+        >
           <FaHeart />
         </button>
       )}
