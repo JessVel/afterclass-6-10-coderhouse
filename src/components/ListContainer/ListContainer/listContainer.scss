@@ -1,0 +1,10 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 90px 30px;
+  height: 100%;
+  align-items: center;
+}
