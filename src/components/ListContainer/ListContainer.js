@@ -30,7 +30,9 @@ const ListContainer = ({ theme, handleFav, favArray, setFavArray }) => {
 
   return (
     <section className='list-container'>
-      {loading === false ? (
+      {loading ? (
+        <Spinner />
+      ) : (
         data &&
         data.map((item) => (
           <Card
@@ -43,8 +45,6 @@ const ListContainer = ({ theme, handleFav, favArray, setFavArray }) => {
             {...item}
           />
         ))
-      ) : (
-        <Spinner />
       )}
     </section>
   );
