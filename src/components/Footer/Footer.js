@@ -13,6 +13,7 @@ const Footer = () => {
         <a
           classname='link-icon'
           href='https://github.com/JessVel/afterclass-6-10-coderhouse'
+          aria-label='Ir a Github'
         >
           <FaGithub />
         </a>
