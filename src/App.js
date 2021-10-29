@@ -5,13 +5,8 @@ import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Signup from './components/Singup/Signup';
 import UserAuthContext from './context/UserAuthContext';
-import {
-  BrowserRouter,
-  Route,
-  Switch,
-  Redirect,
-  useHistory,
-} from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 
 import 'bootswatch/dist/minty/bootstrap.min.css';
 import './App.scss';
@@ -30,6 +25,14 @@ function App() {
   };
 
   const { isAuthenticated } = useContext(UserAuthContext);
+
+  const history = createBrowserHistory();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      history.push('/');
+    }
+  }, [isAuthenticated]);
 
   return (
     <BrowserRouter>
