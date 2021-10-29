@@ -47,8 +47,8 @@ const Login = () => {
 
   const handleGoogle = (e) => {
     e.preventDefault();
-    signInWithGoogle();
     push('/');
+    signInWithGoogle();
   };
   return (
     <div
