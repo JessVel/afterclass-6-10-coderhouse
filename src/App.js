@@ -3,7 +3,7 @@ import NavbarComponent from './components/Navbar';
 import ListContainer from './components/ListContainer/ListContainer';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
-import Signup from './components/Spinner/Signup';
+import Signup from './components/Singup/Signup';
 import UserAuthContext from './context/UserAuthContext';
 import {
   BrowserRouter,
