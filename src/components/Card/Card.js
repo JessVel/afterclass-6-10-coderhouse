@@ -32,7 +32,10 @@ const Card = ({
   };
 
   return (
-    <div className={theme ? 'card' : 'card--dark'}>
+    <div
+      className={theme ? 'card' : ' card card--dark'}
+      style={{ width: '18rem' }}
+    >
       {!fav ? (
         <button
           className={'card-fav'}
@@ -50,11 +53,13 @@ const Card = ({
           <FaHeart />
         </button>
       )}
-      <img className='card-img' src={image} alt={name} />
-      <h1 className='card-title'>{name}</h1>
-      <p className='card-description'>Status:{status}</p>
-      <p className='card-description'>Especie:{species}</p>
-      <p className='card-description'>Género:{gender}</p>
+      <img className='card-img-top' src={image} alt={name} />
+      <div className='card-body'>
+        <h1 className='card-title'>{name}</h1>
+        <p className='card-text'>Status:{status}</p>
+        <p className='card-text'>Especie:{species}</p>
+        <p className='card-text'>Género:{gender}</p>
+      </div>
     </div>
   );
 };

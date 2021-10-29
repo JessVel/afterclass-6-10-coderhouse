@@ -1,10 +1,8 @@
 .card {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   background-color: #d9f9d2;
   max-width: 300px;
-  max-height: 450px;
   text-align: center;
   position: relative;
   padding: 50px 20px;
@@ -51,12 +49,11 @@
   }
 
   &--dark {
+    color: #ffff;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-color: #3d2c8d;
+    background-color: #3d2c8d !important;
     max-width: 300px;
-    max-height: 450px;
     text-align: center;
     position: relative;
     padding: 50px 20px;

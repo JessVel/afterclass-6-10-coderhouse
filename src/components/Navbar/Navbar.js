@@ -2,8 +2,12 @@ import { FaHeart, FaBars } from 'react-icons/fa';
 import Button from '../Button/Button';
 import Portal from '../../assets/portal.png';
 import './styles/navbar.scss';
+import UserAuthContext from '../../context/UserAuthContext';
+import { useContext } from 'react';
 
 const NavbarComponent = ({ theme, handleTheme, favArray }) => {
+  const { logout } = useContext(UserAuthContext);
+
   return (
     <header className={theme ? 'header header-light' : 'header header-dark'}>
       <nav className='navbar-container'>
@@ -27,6 +31,9 @@ const NavbarComponent = ({ theme, handleTheme, favArray }) => {
             theme={theme}
             handleTheme={handleTheme}
           />
+          <button className='btn btn-primary' onClick={logout}>
+            Log out
+          </button>
         </div>
       </nav>
     </header>
